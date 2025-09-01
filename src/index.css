@@ -1,0 +1,34 @@
+/* react-app/src/index.css */
+/* Mengimpor Tailwind's base, components, dan utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styling dasar untuk body */
+body {
+  margin: 0;
+  /* Menggunakan font Inter yang sudah diimpor di index.html */
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Mengatur warna latar belakang sesuai tema aplikasi */
+  background-color: #f3f4f6; /* Warna abu-abu terang */
+  color: #1f2937; /* Warna teks default */
+  min-height: 100vh; /* Memastikan body mengambil tinggi penuh viewport */
+  display: flex; /* Mengatur body sebagai flex container */
+  flex-direction: column; /* Mengatur arah flex menjadi kolom */
+}
+
+/* Styling untuk elemen root aplikasi React */
+#root {
+  flex-grow: 1; /* Memastikan #root mengambil sisa ruang yang tersedia */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tambahan styling global jika diperlukan, bisa ditambahkan di sini */
+/* Misalnya, untuk menimpa beberapa styling default Vite atau Tailwind jika ada konflik */
+/* Pastikan prioritas styling Tailwind lebih tinggi */
+.tailwind-apply {
+  all: unset; /* Menghapus semua styling bawaan browser */
+}
