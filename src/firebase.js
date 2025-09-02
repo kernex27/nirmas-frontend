@@ -19,6 +19,8 @@ const firebaseConfig = {
   measurementId: "G-JPQDYD63TJ"
 };
 
+
+
 // Hindari inisialisasi dobel saat HMR
 const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
 
